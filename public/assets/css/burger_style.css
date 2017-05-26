@@ -1,0 +1,70 @@
+body{
+
+	background-color:#FDBE4D;
+	border-width:1px;
+	border-color: red;
+	border-style: solid;
+
+}
+ul{
+	list-style-type:none;
+}
+#title{
+	height:10%;
+	color:brown;
+	font-style:bold;
+	font-size:45px;
+	font-weight:bold;
+	text-align:center;
+	font-family:vardana;
+	text-shadow:  3px 5px #FF0000;
+}
+#mainbody{
+background-color:#E4AA3E;
+	border-width:1px;
+	border-top: 0px;
+	border-color: red;
+	border-style: solid;
+	height: 40em;
+	width: 100%;
+}
+#mainimage{
+	
+
+}
+#store{
+	height: 10%;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	column-width: 100%;
+	width:49.5%;
+}
+#devour{
+	height: 10%;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	column-width: 100%;
+	width:49.5%;
+}
+#dstore{
+	height: 10%;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	column-width: 100%;
+	width:49.5%;
+}
+#ddevour{
+	height: 10%;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	column-width: 100%;
+	width:49.5%;
+}
+#forminput{
+	text-align-last:center;
+	width: 100%;
+}

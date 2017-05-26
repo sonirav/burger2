@@ -1,0 +1,56 @@
+<div id='main'>
+  <div id='title'>Eat Da Burger</div>
+  <div id='mainimage' align="center"><img src='../assets/img/burgerhead.jpg' width="30%" align="center"></div>
+  <div id='mainbody'>
+  <div id ='store'><h2>Burger Store</h2><hr></div>
+  <div id='devour'><h2>Devour Record</h2><hr></div>
+  <div id ='dstore'><ul>
+  {{#each burger}}
+    {{#unless this.devour}}
+      <li><img src='../assets/img/giphy.gif' width="10%" align="center"><br>
+        {{this.burger_name}}
+
+        <form action="/:{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="devour" value=0>
+          <button type="submit">DEVOUR?</button>
+        </form>
+      </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+  </div>
+  <div id='ddevour'>
+<ul>
+  {{#each burger}}
+    {{#if this.devour}}
+      <li><img src='../assets/img/panda.gif' width="10%" align="center"><br>
+        {{this.burger_name}}
+
+        <form action="/del/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="delete" value="false">
+          <button type="submit">DELETE?</
+          button>
+        </form>
+      </li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+
+  </div>
+      <div id='forminput'>
+      <!--<img src='../assets/img/falling.gif' width="30%" align="center">-->
+      <br>
+        <!--- Form -->
+<form class="create-update-form" action="/" method="POST">
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="burger_name">
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
+
+      </div>
+  </div>
+</div>
